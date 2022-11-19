@@ -1,0 +1,58 @@
+<H1>WELCOME</H1>
+<section class="c1">
+<div>
+<carousel [images]="images" [width]="1000" [height]="300" [cellsToShow]="1" [loop]="true" [autoplay]="true" 
+ [autoplayInterval]="1000" ></carousel>
+<router-outlet></router-outlet>
+</div>
+<br><br>
+<article>
+<H6>New Manga:</H6>
+<div class="card-group c2">
+    <div class="card" *ngFor="let manga of mangaData">
+      <img src="{{manga.img}}" class="card-img-top" alt="{{manga.name}}">
+      <div class="card-body">
+        <h5 class="card-title">{{manga.manganame}}</h5>
+        writer:{{manga.Writer}} <br>
+        price: {{manga.price}} DT <br>
+        
+      </div>
+    </div>
+    
+  </div>
+<br>
+<br>
+<h6>New Comic Books</h6>
+<div class="card-group c2">
+   
+        <div class="card" *ngFor="let comic of comicBookData">
+          <img src="{{comic.img}}" class="card-img-top" alt="{{comic.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{comic.name}}</h5>
+            writer:{{comic.Writer}} <br>
+            price: {{comic.price}} DR <br>
+            
+          </div>
+        </div>
+        
+      </div>
+  
+<br><br>
+<h6>New KIDS comic</h6>
+<div class="card-group c2">
+    
+        <div class="card" *ngFor="let kids of kidsData">
+          <img src="{{kids.img}}" class="card-img-top" alt="{{kids.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{kids.name}}</h5>
+            writer:{{kids.Writer}} <br>
+            price: {{kids.price}} DT <br>
+          </div>
+        </div>
+        
+      </div>
+    
+
+</article>
+</section>
+<br><br>

@@ -1,0 +1,216 @@
+{
+  "login": [
+    {
+      "name": "a",
+      "password": "4",
+      "email": "alaamamlouk@45.gmail",
+      "id": 1
+    },
+    {
+      "name": "alaa",
+      "password": "123",
+      "email": "alaamamlouk@45.gmail",
+      "id": 2
+    },
+    {
+      "name": "ooo",
+      "password": "4458",
+      "email": "al5@1",
+      "id": 3
+    },
+    {
+      "name": "ahmed",
+      "password": "ahmed123",
+      "email": "ahmed@gmail.ahmed",
+      "id": 4
+    },
+    {
+      "name": "user",
+      "password": "user",
+      "email": "user@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "ahmed",
+      "password": "123",
+      "email": "ahmed@gmail.ahmed",
+      "id": 6
+    },
+    {
+      "name": "nacer",
+      "password": "123456789",
+      "email": "nacerGuizani@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "alaa",
+      "password": "alaa",
+      "email": "alaamamlouk@45.gmail",
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "unviverse": "DC",
+      "book": "comicBook",
+      "type": "",
+      "id": 5,
+      "comicBookname": "Superman",
+      "price": 5,
+      "Writer": "Alan Moore",
+      "nb": "55",
+      "img": "../../assets/superman.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "unviverse": "",
+      "book": "comicBook",
+      "id": 6,
+      "comicBookname": "Spider-Man123",
+      "price": 0,
+      "Writer": "J. Michael Straczynski",
+      "nb": "553",
+      "img": "../../assets/spiderman.jpg",
+      "qt": "50",
+      "newz": ""
+    },
+    {
+      "unviverse": "DC",
+      "book": "comicBook",
+      "type": "",
+      "id": 7,
+      "comicBookname": "Wonder Woman",
+      "price": 5,
+      "Writer": "Gail Simone",
+      "nb": "55",
+      "img": "../../assets/wonderwoman.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "unviverse": "Marvel",
+      "book": "comicBook",
+      "type": "",
+      "id": 8,
+      "comicBookname": "Iron Man",
+      "price": 5,
+      "Writer": "Stan Lee",
+      "nb": "55",
+      "img": "../../assets/ironman.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "unviverse": "Marvel",
+      "book": "comicBook",
+      "type": "",
+      "id": 9,
+      "comicBookname": "Black Widow",
+      "price": 5,
+      "Writer": "Don Rico",
+      "nb": "55",
+      "img": "../../assets/blackwidow.jpg",
+      "qt": "50"
+    },
+    {
+      "unviverse": "DC",
+      "book": "comicBook",
+      "type": "",
+      "id": 10,
+      "comicBookname": "Aquaman",
+      "price": 5,
+      "Writer": "J. Michael Straczynski",
+      "nb": "55",
+      "img": "../../assets/aquaman.jpg",
+      "qt": "50"
+    },
+    {
+      "book": "kids",
+      "id": 11,
+      "kidbookname": "Roller Girl",
+      "price": 5,
+      "Writer": "Victoria Jamieson",
+      "nb": "55",
+      "img": "../../assets/roller Girl.jpg",
+      "qt": "50"
+    },
+    {
+      "book": "kids",
+      "id": 12,
+      "kidbookname": "Percy Jackson",
+      "price": 5,
+      "Writer": "Rick Riordan",
+      "nb": "55",
+      "img": "../../assets/Percyjackson.jpg",
+      "qt": "50"
+    },
+    {
+      "book": "kids",
+      "id": 13,
+      "kidbookname": "Zita Space Girl",
+      "price": 5,
+      "Writer": "Ben Hatke",
+      "nb": "55",
+      "img": "../../assets/zita the spacegirl.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "book": "kids",
+      "id": 14,
+      "kidbookname": "New Kid",
+      "price": 5,
+      "Writer": "Jerry Craft",
+      "nb": "55",
+      "img": "../../assets/newkid.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "book": "kids",
+      "id": 15,
+      "kidbookname": "Guts",
+      "price": 5,
+      "Writer": "Rania Telgemier",
+      "nb": "55",
+      "img": "../../assets/Guts.jpg",
+      "qt": "50",
+      "new": "new"
+    },
+    {
+      "book": "kids",
+      "id": 16,
+      "kidbookname": "Dog Man: Fetch-22",
+      "price": 5,
+      "Writer": "Dav Pilkey",
+      "nb": "55",
+      "img": "../../assets/dogman.jpg",
+      "qt": "50"
+    },
+    {
+      "book": "kids",
+      "id": 17,
+      "kidbookname": "Amulet: The Stonekeeper",
+      "price": 5,
+      "Writer": "Kazu Kibuishi",
+      "nb": "55",
+      "img": "../../assets/615Y8YeK85L.jpg",
+      "qt": "50"
+    },
+    {
+      "book": "kids",
+      "id": 18,
+      "kidbookname": "Click",
+      "price": 5,
+      "Writer": "Kayla Miller",
+      "nb": "55",
+      "img": "../../assets/click.jpg",
+      "qt": "50"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,23 @@
+section
+{
+
+ width: 70%;    
+position: relative;
+margin-left: 20%;
+margin-top: 1%;
+margin-bottom: 1%;
+
+}
+.c1
+{
+    width: 40%;
+    
+}
+img
+{
+    height: 400px;
+}
+.c3
+{
+    color: rebeccapurple;
+}

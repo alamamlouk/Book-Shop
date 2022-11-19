@@ -1,0 +1,106 @@
+ <section>
+<div class="row row-cols-1 row-cols-md-2 g-2">
+  <div class="col c1" *ngFor="let kid of KidData">
+    <div class="card">
+      <img src="{{kid.img}}" class="card-img-top" alt="{{kid.kidbookname}}">
+      <div class="card-body">
+        <h5 class=" c3 card-title">{{kid.kidbookname}}</h5>
+        Writer: {{kid.Writer}} <br>
+        number of pages:{{kid.nb}} <br>
+        
+         <button (click)="viewKid(kid)" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-success"> view detail</button>
+        <button (click)="onEdit(kid)" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success" *ngIf="user=='admin'">EDIT</button>
+        <button>add to Cart </button> <button (click)="deleteKid(kid)" *ngIf="user=='admin'"> delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<button type="button" (click)="clickAddKid()" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success" *ngIf="user=='admin'"> ADD BOOK</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Kid's book NAME</label>
+            <input type="text" formControlName="kidbookname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Writer</label>
+            <input type="text"formControlName="Writer" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">number of pages</label>
+            <input type="text" formControlName="nb"class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">image</label>
+            <input type="text"formControlName="img" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">qt</label>
+            <input type="text" formControlName="qt"class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">price</label>
+            <input type="text" formControlName="price"class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">new ?</label>
+            <input type="text" formControlName="new"class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)="postKidDetails()"  class="btn btn-primary">ADD</button>
+        <button type="button" *ngIf="showUpdate" (click)="updateKid()"  class="btn btn-primary">update</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Kid's Book NAME</label>
+                    <input type="text" formControlName="kidbookname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    
+                  </div>
+                  <label for="exampleInputEmail1" class="form-label">price</label>
+                  <input type="text" formControlName="price" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label">Writer </label>
+                  <br><input type="text" formControlName="Writer" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail1" class="form-label">number of pages</label>
+                   <br> <input type="text" formControlName="nb" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
